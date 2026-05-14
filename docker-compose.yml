@@ -1,0 +1,20 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=sqlite:////app/data/stocksense.db
+      - CORS_ORIGINS=http://localhost:5173,http://localhost:8080
+    volumes:
+      - stocksense-data:/app/data
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+
+volumes:
+  stocksense-data:

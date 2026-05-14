@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(45, 212, 191, 0.12), transparent 32%),
+    linear-gradient(135deg, #070a12 0%, #0d111c 45%, #070a12 100%);
+  color: #cbd5e1;
+}
+
+button,
+a,
+select {
+  font: inherit;
+}
+
+.panel {
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 8px;
+  background: rgba(18, 24, 38, 0.78);
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(16px);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 9px 12px;
+  color: #e2e8f0;
+  text-decoration: none;
+  transition: 160ms ease;
+}
+
+.btn:hover {
+  border-color: rgba(45, 212, 191, 0.45);
+  color: white;
+}
+
+.seg {
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.035);
+  padding: 7px 10px;
+  color: #94a3b8;
+  font-size: 13px;
+  transition: 160ms ease;
+}
+
+.seg:hover,
+.seg-active {
+  border-color: rgba(45, 212, 191, 0.45);
+  background: rgba(45, 212, 191, 0.12);
+  color: #ccfbf1;
+}
+
+.icon-shell {
+  display: grid;
+  height: 38px;
+  width: 38px;
+  place-items: center;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.icon-button {
+  display: grid;
+  height: 32px;
+  width: 32px;
+  place-items: center;
+  border-radius: 7px;
+  color: #94a3b8;
+  transition: 160ms ease;
+}
+
+.icon-button:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: white;
+}
+
+.chart-empty {
+  display: grid;
+  min-height: 240px;
+  place-items: center;
+  border: 1px dashed rgba(148, 163, 184, 0.2);
+  border-radius: 8px;
+  color: #64748b;
+}
