@@ -118,9 +118,9 @@ Frontend:
 
 Live URLs:
 
-- Backend: pending user deployment
-- Frontend: pending user deployment
-- GitHub: pending repository creation
+- Backend: `https://backend-lovat-seven-54.vercel.app`
+- Frontend: `https://frontend-phi-flame-38.vercel.app`
+- GitHub: `https://github.com/abdulazees1111s/stocksense-ai`
 
 ## Screenshots
 
