@@ -13,7 +13,13 @@ class Settings(BaseSettings):
     app_name: str = "StockSense AI Pro"
     app_version: str = "1.0.0"
     database_url: str = f"sqlite:///{DATA_DIR / 'stocksense.db'}"
-    cors_origins: str = "http://localhost:5173,http://127.0.0.1:5173"
+    cors_origins: str = (
+        "http://localhost:5173,"
+        "http://127.0.0.1:5173,"
+        "https://frontend-phi-flame-38.vercel.app,"
+        "https://frontend-atymtyk6b-abdulazees1111s-projects.vercel.app,"
+        "https://stocksense-ai.vercel.app"
+    )
     cache_ttl_seconds: int = 300
     default_history_period: str = "1y"
 
