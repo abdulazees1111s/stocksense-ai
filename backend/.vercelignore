@@ -8,3 +8,4 @@ data
 *.sqlite
 tests
 server.*.log
+pyproject.toml
