@@ -1,10 +1,11 @@
+import os
 from functools import lru_cache
 from pathlib import Path
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 ROOT_DIR = Path(__file__).resolve().parents[2]
-DATA_DIR = ROOT_DIR / "data"
+DATA_DIR = Path("/tmp") if os.getenv("VERCEL") else ROOT_DIR / "data"
 DATA_DIR.mkdir(exist_ok=True)
 
 

@@ -106,6 +106,8 @@ Backend:
 - Root directory: `backend`
 - Build command: `pip install -r requirements.txt`
 - Start command: `uvicorn main:app --host 0.0.0.0 --port $PORT`
+- A root-level `render.yaml` is included for Render Blueprint deployment.
+- A backend `vercel.json` is also included for demo/serverless deployment when Render access is not available.
 
 Frontend:
 
