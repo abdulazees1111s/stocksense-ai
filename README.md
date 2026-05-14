@@ -119,6 +119,7 @@ Frontend:
 Live URLs:
 
 - Backend: `https://backend-lovat-seven-54.vercel.app`
+- Swagger/API docs: `https://backend-lovat-seven-54.vercel.app/docs`
 - Frontend: `https://frontend-phi-flame-38.vercel.app`
 - GitHub: `https://github.com/abdulazees1111s/stocksense-ai`
 
