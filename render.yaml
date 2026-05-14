@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: stocksense-ai-pro-api
+    env: python
+    rootDir: backend
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: DATABASE_URL
+        value: sqlite:///data/stocksense.db
+      - key: CORS_ORIGINS
+        value: https://stocksense-ai.vercel.app,http://localhost:5173,http://127.0.0.1:5173
+      - key: CACHE_TTL_SECONDS
+        value: 300

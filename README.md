@@ -112,6 +112,7 @@ Frontend:
 - Use Vercel.
 - Root directory: `frontend`
 - Set `VITE_API_BASE_URL` to the deployed backend URL.
+- Recommended production value: `https://stocksense-ai-pro-api.onrender.com`
 
 Live URLs:
 
